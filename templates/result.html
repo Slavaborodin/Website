@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <body>
+      <H1> Thanks for getting in touch the following details were submitted </H1>
+      <table border = 1>
+         {% for key, value in result.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+</body>
+</html>
