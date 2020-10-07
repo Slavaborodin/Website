@@ -63,29 +63,47 @@ li a:hover {
 }
 </style>
 
-<!-- Style for footer here -->
+
+	<!-- Style for footer here -->
 	<style> 
 	.footer
 	{
 		position: absolute;
+		clear: both;
 		left:0;
 		bottom: 0;
-		width:100%;
+		max-width:2560px;
 		height: 50px;
 		background-color: powderblue;
 		color: Black;
+		margin-top: auto;
 		text-align: left;
 	}
 </style>
 
 <!-- BODY COLOUR goes here -->
+<!-- margin:0 & padding:0 v.important otherwise gap left on the side of header & footer -->
 <style>
+	html,body{overflow-y: scroll; }
 	body
 	{
 		background-color: #DFCFBE;
-		
+
+		margin:0;
+		padding:0;
 	}
 </style>
+
+<!-- Paragraph style -->
+<style>
+	p
+	{
+		font-family: courier new;
+		font-size: 16px;
+		text-indent: 30px;
+	}
+</style>
+
 
 </head>
 
@@ -98,7 +116,7 @@ li a:hover {
 </div>
 
 	<ul>
-	<li><a href="home.htm">Home</a></li>
+	<li><a href="homepage.htm">Home</a></li>
 	<li><a href="about.htm">About</a></li>
 	<li><a href="projects.htm">Projects</a></li>
 	<li><a href="Contact.htm">Contact Me</a></li>
