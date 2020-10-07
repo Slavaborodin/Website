@@ -5,35 +5,26 @@
 
 	<!--Media Queries -->
 	<style>
-	@media only screen 
-  	and (min-device-width: 375px) 
-  	and (max-device-width: 812px) 
-  	and (-webkit-min-device-pixel-ratio: 3)
-  	and (orientation: landscape) { 
+	
+	@media only screen and (min-width: 1920px) and (max-width: 2560px) {}
 
-	}
+	</style>
 
 
-	@media screen 
-	  and (min-device-width: 1200px) 
-	  and (max-device-width: 1600px) 
-	  and (-webkit-min-device-pixel-ratio: 2)
-	  and (min-resolution: 192dpi) { 
-}
-
-</style>
 
 	<!-- Style for footer here -->
 	<style> 
 	.footer
 	{
-		position: absolute;
+		position: relative;
+		clear: both;
 		left:0;
 		bottom: 0;
-		width:100%;
+		max-width:2560px;
 		height: 50px;
 		background-color: powderblue;
 		color: Black;
+		margin-top: auto;
 		text-align: left;
 	}
 </style>
@@ -57,7 +48,7 @@
 	}
 </style>
 
-<!-- change  to contactsasda-->
+
 <!-- Style for Header 1 --> 
 <style>
 .header1
@@ -94,19 +85,12 @@ ul {
   text-align:center;
 
 }
-
-
-
-
 ul li {
   float: left;
   border-right:1px solid #bbb;
   font-size: 16px;
   display:inline-block;
-
-
 }
-
 ul li a {
   display:block;
   color: white;
@@ -115,12 +99,9 @@ ul li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 ul li a:hover {
   background-color: #111;
 }
-
-
 ul li div
 {
   border:1px solid green;
@@ -130,7 +111,6 @@ ul li div
   left:0;
   right:0;
 }
-
 </style>
 
 
@@ -139,7 +119,6 @@ ul li div
 	.font
 	{
 		font-family:courier;
-
 	}
 </style>
 
@@ -148,7 +127,6 @@ ul li div
 .form
 {
 text-align:center;
-
 }
 </style>
 
@@ -197,11 +175,15 @@ input[type=submit] {
 </style>
 
 <!-- BODY COLOUR goes here -->
+<!-- margin:0 & padding:0 v.important otherwise gap left on the side of header & footer -->
 <style>
+	html,body{overflow-y: scroll; }
 	body
 	{
 		background-color: #DFCFBE;
-		
+
+		margin:0;
+		padding:0;
 	}
 </style>
 
@@ -220,19 +202,26 @@ input[type=submit] {
 	}
 </style>
 
-
-
-
 <title> Contact me </title>
+
+
+
+<!-- Paragraph style -->
+<style>
+	p
+	{
+		font-family: courier new;
+		font-size: 16px;
+		text-indent: 30px;
+	}
+</style>
+
+
 </head>
-
-
-
 <body>
 	<div class="header1">
 <h1> CONTACT ME BELOW</h1>
 </div>
-
 
 
 <!--Menu Navigation Bar to go here -->
@@ -243,7 +232,6 @@ input[type=submit] {
 	<li><a href="projects.htm">Projects</a></li>
 	<li><a href="Contact.htm">Contact Me</a></li>
 </ul>
-
 </div>
 
 <!-- Paragraph to contact goes here --> 
@@ -278,7 +266,6 @@ input[type=submit] {
 <input type="submit" value="Submit">
 </form>
 
-
 <!-- Javascript to return a successful submission --> 
 <script>
 document.getElementById("contact").onsubmit = function() {myFunction()};
@@ -288,13 +275,14 @@ function myFunction() {
 </script>
 </div>
 
-
 <!-- Footer to go here --> 
-<div class="footer">
-<footer>
+<!---->
+	<div class="footer"> 
 	<p> &copy; 2020 Slava Borodin</p>
-</footer>
-</div>
+	</div>
+<!--
+
+-->
 
 
 </body>
