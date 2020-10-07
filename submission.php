@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<meta charset="UTF-8">
+<head>
+
+	<title>Submision Success</title>
+</head>
+
+
+<body>
+	<h1> Results Attached</h1>
+	<p> Results of submission</p>
+	<ol>
+		<li><em>First Name:</em> <?php echo $_POST["fname"]?> </li>
+		<li><em>Last Name:</em> <?php echo $_POST["lname"]?> </li>
+		<li><em>Email:</em> <?php echo $_POST["email"]?> </li>
+		
+
+	</ol>
+</body>
+</html>

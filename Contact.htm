@@ -1,0 +1,301 @@
+<!DOCTYPE html> 
+<html lang="en-US">
+<meta charset="UTF-8">
+<head>
+
+	<!--Media Queries -->
+	<style>
+	@media only screen 
+  	and (min-device-width: 375px) 
+  	and (max-device-width: 812px) 
+  	and (-webkit-min-device-pixel-ratio: 3)
+  	and (orientation: landscape) { 
+
+	}
+
+
+	@media screen 
+	  and (min-device-width: 1200px) 
+	  and (max-device-width: 1600px) 
+	  and (-webkit-min-device-pixel-ratio: 2)
+	  and (min-resolution: 192dpi) { 
+}
+
+</style>
+
+	<!-- Style for footer here -->
+	<style> 
+	.footer
+	{
+		position: absolute;
+		left:0;
+		bottom: 0;
+		width:100%;
+		height: 50px;
+		background-color: powderblue;
+		color: Black;
+		text-align: left;
+	}
+</style>
+
+	<!-- Style for header here -->
+	<style> 
+	.header
+	{
+		position: absolute;
+		left:0;
+		top:0;
+		bottom: 0;
+		max-width:700px;
+		height: 50px;
+		/*background-color: powderblue;*/
+		background-color:black;
+		text-align: center;
+		color:#92A8D1;
+		width: 100%;
+		font-family:courier;
+	}
+</style>
+
+<!-- change -->
+<!-- Style for Header 1 --> 
+<style>
+.header1
+{
+text-align: center;
+color:#92A8D1;
+width: 100%;
+font-family:courier;
+}
+	
+</style>
+
+<style >
+	.container{
+	width: 100000px;
+	margin: 0 auto;
+}
+</style>
+
+<!-- Style for Navigation Bar to go here -->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width:100%;
+  height:50px;
+  position: absolute;
+  top:30;
+  text-indent: 0px;
+  text-align:center;
+
+}
+
+
+
+
+ul li {
+  float: left;
+  border-right:1px solid #bbb;
+  font-size: 16px;
+  display:inline-block;
+
+
+}
+
+ul li a {
+  display:block;
+  color: white;
+  text-indent: 1px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111;
+}
+
+
+ul li div
+{
+  border:1px solid green;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  left:0;
+  right:0;
+}
+
+</style>
+
+
+<!-- FONT STYLE GOES HERE -->
+<style>
+	.font
+	{
+		font-family:courier;
+
+	}
+</style>
+
+<!-- Form style to go here -->
+<style>
+.form
+{
+text-align:center;
+
+}
+</style>
+
+<!-- Form Label Aligned -->
+<!-- Custom CSS for input types i.e text,email and submit buttons to align them to the correct displays-->
+
+<style> 
+label
+{
+	display:inline-block;
+	width:100px;
+	text-align: left;
+}
+</style>
+
+<style> 
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+</style>
+<style> 
+input[type=email] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+</style>
+<style> 
+input[type=submit] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+}
+</style>
+
+<!-- BODY COLOUR goes here -->
+<style>
+	body
+	{
+		background-color: #DFCFBE;
+		
+	}
+</style>
+
+<!-- Custom Css for the text box here to align it, resize set to none to stop it dragging out of proportion -->
+<style>
+	textarea
+	{
+		resize:none;
+		width: 40%;
+		height:150px;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		box-sizing: border-box;
+  		border: 2px solid black;
+  		border-radius: 4px;
+	}
+</style>
+
+
+
+
+<title> Contact me </title>
+</head>
+
+
+
+<body>
+	<div class="header1">
+<h1> CONTACT ME BELOW</h1>
+</div>
+
+
+
+<!--Menu Navigation Bar to go here -->
+<div class ="container">
+<ul>
+	<li><a href="homepage.htm">Home</a></li>
+	<li><a href="about.htm">About</a></li>
+	<li><a href="projects.htm">Projects</a></li>
+	<li><a href="Contact.htm">Contact Me</a></li>
+</ul>
+
+</div>
+
+<!-- Paragraph to contact goes here --> 
+<div class="font"
+<br>
+<br>
+<br>
+<br>
+<pre>
+<p style="text-align: center"> Use the form below to contact me and I will do my best to respond as quickly as possible.</p>
+</pre>
+</div>
+
+<!--Submit form to contact the page-->
+<div class="form">
+<form id="contact">
+	<br>
+	<br>
+<label for="fname">First Name:</label><br> 
+<input type="text" id="fname" name="fname" required><br>
+<br>
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname" name="lname" required=""><br>
+<br>
+
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email" required=""><br>
+<br>
+<label for="message">Message:</label><br>
+<textarea name="message" > </textarea><br>
+<br>
+<input type="submit" value="Submit">
+</form>
+
+
+<!-- Javascript to return a successful submission --> 
+<script>
+document.getElementById("contact").onsubmit = function() {myFunction()};
+function myFunction() {
+  alert("Thank you for getting in touch!");
+}
+</script>
+</div>
+
+
+<!-- Footer to go here --> 
+<div class="footer">
+<footer>
+	<p> &copy; 2020 Slava Borodin</p>
+</footer>
+</div>
+
+
+</body>
+</html>
