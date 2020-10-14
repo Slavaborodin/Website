@@ -30,6 +30,40 @@ font-family:courier;
 }
 	
 </style>
+
+
+<!-- FONT STYLE GOES HERE -->
+<style>
+	.font
+	{
+		font-family:courier;
+	}
+</style>
+
+<!-- Body Style -->
+
+<style>
+	html,body{overflow-y: scroll; }
+	body
+	{
+		background-color: #DFCFBE;
+
+		margin:0;
+		padding:0;
+	}
+</style>
+
+
+<!-- Paragraph style -->
+<style>
+	p
+	{
+		font-family: courier new;
+		font-size: 16px;
+		text-indent: 30px;
+	}
+</style>
+
 <style>
 ul {
   list-style-type: none;
@@ -95,14 +129,55 @@ li a:hover {
 </style>
 
 <!-- Paragraph style -->
+<!-- Adding some styling to fade in text on homepage -->
 <style>
 	p
 	{
 		font-family: courier new;
 		font-size: 16px;
 		text-indent: 30px;
+		text-align: left;
+		margin-left: 10px;
+		display: inline-block;
+		text-transform: none;
+		margin: 0 20px;
+		opacity: 0.0;
+		animation: fadeIn ease 10s;
+		-webkit-animation:fadeIn ease 10s;
 	}
+
+
+@keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+
+}
+
+@-moz-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+@-webkit-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-ms-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
 </style>
+
+
+
 
 
 </head>
@@ -122,6 +197,11 @@ li a:hover {
 	<li><a href="Contact.htm">Contact Me</a></li>
 </ul>
 
+
+<P> <br><br><br>
+	<br>
+	Welcome to my personal website, here you will be able to learn a little bit about me. Such as my previous projects that I have worked on, my interests and a little bit about me personally. If this sounds good to you, be sure to check out all of my webpages and feel free to get in contact with me using the <a href="Contact.htm">Contact Me</a> page.
+</P>
 
 <!-- Footer to go here --> 
 <div class="footer">
