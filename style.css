@@ -6,7 +6,8 @@
 		left:0;
 		bottom: 0;
 		width:100%;
-		height: 50px;
+		height: 3.0rem;
+		margin-top: -50px;
 		background-color: powderblue;
 		color: Black;
 		text-align: left;
@@ -39,6 +40,7 @@
 		html,body{overflow-y: scroll; }
 		body
 		{
+			height: 100%
 			background-color: #DFCFBE;
 			margin:0;
 			padding:0;
@@ -52,6 +54,14 @@
 			font-family: courier new;
 			font-size: 16px;
 			text-indent: 30px;
+		}
+
+		.text{
+			text-align: center;
+			font-size: 16px;
+			font-family: courier new;
+			padding-bottom: 20px;
+			padding: 1px 2px;
 		}
 
 
@@ -70,6 +80,7 @@
 	  top:30;
 	  text-indent: 0px;
 	  text-align:center;
+	  font-family: courier;
 
 	}
 	ul li {
@@ -77,6 +88,7 @@
 	  border-right:1px solid #bbb;
 	  font-size: 16px;
 	  display:inline-block;
+	  font-family: courier;
 	}
 	ul li a {
 	  display:block;
@@ -85,6 +97,7 @@
 	  text-align: center;
 	  padding: 14px 16px;
 	  text-decoration: none;
+	  font-family: courier;
 	}
 	ul li a:hover {
 	  background-color: #111;
@@ -102,19 +115,7 @@
 
 	/*<!-- Style for footer here -->*/
 
-	.footer
-	{
-		position: absolute;
-		clear: both;
-		left:0;
-		bottom: 0;
-		max-width:2560px;
-		height: 50px;
-		background-color: powderblue;
-		color: Black;
-		margin-top: auto;
-		text-align: left;
-	}
+	
 
 
 /*<!-- BODY COLOUR goes here -->*/
@@ -162,6 +163,9 @@
 		font-size: 24px;
 		font-weight:bold;
 		font-family:courier;
+		color:#92A8D1;
+		font-weight:bold;
+		text-align: center;
 
 	}
 
@@ -169,24 +173,36 @@
 		font-size: 22px;
 		font-weight:bold;
 		font-family:courier;
+		color:#92A8D1;
+		font-weight:bold;
+		text-align: center;
 	}
 
 	h4{
 		font-size: 20px;
 		font-weight:bold;
 		font-family:courier;
+		color:#92A8D1;
+		font-weight:bold;
+		text-align: center;
 	}
 
 	h5{
 		font-size: 18px;
 		font-weight:bold;
 		font-family:courier;
+		color:#92A8D1;
+		font-weight:bold;
+		text-align: center;
 	}
 
 	h6{
 		font-size: 16px;
 		font-weight:bold;
 		font-family:courier;
+		color:#92A8D1;
+		font-weight:bold;
+		text-align: center;
 	}
 
 	.image{
@@ -216,6 +232,94 @@
 		width: 400px;
 		background: #62c87a;
 	}
+
+
+	.fa-facebook {
+	  background: #3B5998;
+	  color: white;
+	  margin-left: 12px;
+	  margin-right: 12px;
+	}
+
+
+	.fa {
+	  padding: 10px;
+	  font-size: 20px;
+	  width: 30px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 4px 1px;
+	  border-radius: 10%
+
+	}
+
+	.fa-linkedin{
+		background: #007bb5;
+		color:white;
+			margin-left: 12px;
+		margin-right: 12px;
+	}
+
+	.fa-instagram{
+		background:#833AB4;
+		color:white;
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+
+	.fa-github{
+		background:#f5f5f5;
+		margin-left: 12px;
+		cursor: pointer;
+	}
+
+
+	/* Addition of a scrollbar 
+
+	::-webkit-scrollbar-track{
+		width:10px;
+	}
+
+	::-webkit-scrollbar-thumb{
+		background: #888;
+	}
+
+	::-webkit-scrollbar-thumb:hover{
+		background: #555;
+	}
+	*/
+
+
+
+	#page-container{
+		position: relative;
+		min-height: 100vh;
+	}
+
+	#content-wrap{
+		padding-bottom: 2.5rem;
+
+	}
+
+
+/*
+	#social #container{
+		text-align: center;
+	}
+
+	#social #container ul{
+		float:left;
+
+	}
+
+	#social #container ul li{
+		float:left;
+		padding-left: 10px;
+		list-style-type: none;
+	}*/
+
+
+
 
 /* not used right now , was used to look to fade in and out text will look to add it in future
 @keyframes fadeIn{
